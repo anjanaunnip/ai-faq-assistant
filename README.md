@@ -129,7 +129,7 @@ FAQ Dashboard
 ![FAQ Dashboard](images/Dashboard.jpeg)
 Add/Create New FAQ
 ![Add/create New FAQ](images/add-faq.png)
-![Add/create New FAQ](images/faq.added-png)
+![Add/create New FAQ](images/faq-added.png)
 Update/Edit FAQ
 ![Edit FAQ](images/crud-update.png)
 AI Rewrite Feature
