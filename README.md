@@ -125,19 +125,28 @@ The rewritten content is returned to the frontend (React + TypeScript) and repla
 Screenshots of UI
 LandingPage
 ![LandingPage](images/LandingPage.png)
+
 FAQ Dashboard
 ![FAQ Dashboard](images/Dashboard.jpeg)
+
 Add/Create New FAQ
 ![Add/create New FAQ](images/add-faq.png)
-![Add/create New FAQ](images/faq.added-png)
+
+![Add/create New FAQ](images/faq-added.png)
+
 Update/Edit FAQ
 ![Edit FAQ](images/crud-update.png)
+
 AI Rewrite Feature
 ![AI Rewrite Feature](images/before-rewrite.png)
+
 ![AI Rewrite Feature](images/rewrite-using-ai-input.png)
+
 ![AI Rewrite Feature](images/rewrited-faq-added.png)
+
 Delete Confirmation
 ![Delete Confirmation](images/crud-delete.png)
+
 Searching FAQ
 ![Search FAQ](images/crud-search.jpeg)
 
