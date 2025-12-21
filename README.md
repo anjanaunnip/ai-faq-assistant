@@ -7,12 +7,14 @@ The AI-Powered Customer Support FAQ Assistant is a full-stack web application de
 It provides complete CRUD functionality along with an optional AI-based answer rewriting feature that helps refine and improve FAQ responses.
 
 The project demonstrates:
+
     Modern frontend development using React + TypeScript
     Backend API development using Node.js + Express
     Database integration using SQLite with Prisma
     Integration of a modern AI text rewriting API
 
 Objectives
+
     1. Allow users to add, view, edit, delete, and search FAQs
     2. Provide an AI-powered feature to rewrite FAQ answers in a clearer and  more professional manner
     3. Maintain clean architecture and separation of concerns between CRUD operations and AI functionality
@@ -156,6 +158,7 @@ Searching FAQ
 
 
 Assumptions & Notes: 
+
     The AI rewrite feature is optional and does not automatically save data; users must manually confirm changes.
     SQLite is used as a lightweight, file-based database for simplicity and ease of setup.
     The application is intended for single-admin usage and does not include authentication or role management.
@@ -164,6 +167,7 @@ Assumptions & Notes:
     The project focuses on functionality and clarity rather than large-scale deployment.
 
 Validation & Error Handling: 
+
     Both Question and Answer fields are required before saving
     Delete operation requires user confirmation
     AI failures do not affect normal CRUD operations
