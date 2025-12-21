@@ -110,9 +110,13 @@ http://localhost:3000
 
 API Endpoints
 GET    /faqs         - Fetch all FAQs
+
 POST   /faqs         - Create new FAQ
+
 PUT    /faqs/:id     - Update existing FAQ
+
 DELETE /faqs/:id     - Delete FAQ
+
 POST   /ai/rewrite   - Rewrite answer using AI
 
 
@@ -152,6 +156,7 @@ Searching FAQ
 
 
 Assumptions & Notes
+
     The AI rewrite feature is optional and does not automatically save data; users must manually confirm changes.
     SQLite is used as a lightweight, file-based database for simplicity and ease of setup.
     The application is intended for single-admin usage and does not include authentication or role management.
@@ -160,10 +165,12 @@ Assumptions & Notes
     The project focuses on functionality and clarity rather than large-scale deployment.
 
 Validation & Error Handling
+
     Both Question and Answer fields are required before saving
     Delete operation requires user confirmation
     AI failures do not affect normal CRUD operations
 
 
 Conclusion
+
 This project demonstrates a complete full-stack solution with modern UI, reliable backend architecture, database persistence, and intelligent AI integration, fulfilling all requirements specified in the assessment.
