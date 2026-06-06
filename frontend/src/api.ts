@@ -1,4 +1,4 @@
-const API_URL = "/api";
+const API_URL = "";
 
 export type FAQ = {
   id: string;
@@ -7,45 +7,57 @@ export type FAQ = {
 };
 
 export const fetchFAQs = async (): Promise<FAQ[]> => {
-  const res = await fetch(`${API_URL}/faqs`);
+  const res = await fetch(`${API_URL}/api/faqs`);
   return res.json();
 };
 
 export const addFAQ = async (faq: Omit<FAQ, "id">): Promise<FAQ> => {
-  const res = await fetch(`${API_URL}/faqs`, {
+  const res = await fetch(`${API_URL}/api/faqs`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(faq),
   });
+
   return res.json();
 };
+
 
 export const updateFAQ = async (
   id: string,
   faq: Omit<FAQ, "id">
 ): Promise<FAQ> => {
-  const res = await fetch(`${API_URL}/faqs/${id}`, {
+
+  const res = await fetch(`${API_URL}/api/faqs/${id}`, {
     method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(faq),
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(faq)
   });
+
   return res.json();
 };
 
-export const deleteFAQ = async (id: string): Promise<void> => {
-  await fetch(`${API_URL}/faqs/${id}`, {
-    method: "DELETE",
+
+export const deleteFAQ = async(id:string)=>{
+  await fetch(`${API_URL}/api/faqs/${id}`,{
+    method:"DELETE"
   });
 };
+
 
 export const rewriteAnswer = async (
-  answer: string
-): Promise<{ rewrittenAnswer: string }> => {
-  const res = await fetch(`${API_URL}/ai/rewrite`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ answer }),
-  });
+  answer:string
+):Promise<{rewrittenAnswer:string}>=>{
 
-  return res.json();
+ const res = await fetch(`/api/ai/rewrite`,{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({answer})
+ });
+
+ return res.json();
+
 };
