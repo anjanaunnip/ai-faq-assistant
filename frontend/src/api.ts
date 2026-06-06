@@ -41,7 +41,7 @@ export const deleteFAQ = async (id: string): Promise<void> => {
 export const rewriteAnswer = async (
   answer: string
 ): Promise<{ rewrittenAnswer: string }> => {
-  const res = await fetch("http://localhost:5000/ai/rewrite", {
+  const res = await fetch(`${API_URL}/ai/rewrite`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ answer }),
